@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Linear Regression Data-set | Kaggle</title>
+  <meta charset="utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Data-set for practicing Linear Regression" />
+  <meta name="turbolinks-cache-control" content="no-cache" />
+    <meta name="keywords" content="earth and nature,linear regression" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="4xrs6QGVNns41p0HngFuSQ==" type="text/javascript">
+    window["pageRequestStartTime"] = 1638489354895;
+    window["pageRequestEndTime"] = 1638489355010;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+  <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="4xrs6QGVNns41p0HngFuSQ==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+    <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=a39c9d14b7e6072d0f7a" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=453de5392c911bfbccf0" />
+  
+    
+ 
+  
+    <script nonce="4xrs6QGVNns41p0HngFuSQ==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="4xrs6QGVNns41p0HngFuSQ==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-12629138-1', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="4xrs6QGVNns41p0HngFuSQ==" async src="https://www.googletagmanager.com/gtag/js?id=UA-12629138-1"></script>
+
+  
+    
+        <meta property="og:url" content="https://kaggle.com/tanuprabhu/linear-regression-dataset" />
+        <meta property="og:title" content="Linear Regression Data-set" />
+        <meta property="og:description" content="Data-set for practicing Linear Regression" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/239789/508365/92496b1d3793e85e562d4ad5928e31ab/dataset-card.png?t=2019-06-21-06-06-24" />
+        <meta property="fb:app_id" content="2665027677054710" />
+
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@kaggledatasets" />
+    
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+        <script nonce="4xrs6QGVNns41p0HngFuSQ==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Linear Regression Data-set","description":"### Context\n\nThe reason behind providing the data-set is that currently I'm doing my Master's in Computer Science, in my second semester I have chosen Data Science class, so in this class they are teaching me Linear Regression, so I decided to provide a set of x and y values, which not only helps me and also helps others.\n\n### Content\n\nThe dataset contains x and y values: \nx values are just iterating values.\ny values depend on the equation y = mx+c.\n\n\n\n\n### Inspiration\n\nEveryone on this planet should be familiar (at least Computer Science students, etc.) about Linear Regression, so calculate the trend line, R^2, coefficient and intercept values.","url":"https://www.kaggle.com/tanuprabhu/linear-regression-dataset","version":1,"keywords":["subject, earth and nature","technique, regression, linear regression"],"license":{"@type":"CreativeWork","name":"Data files © Original Authors","url":""},"identifier":["239789"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Tanu N Prabhu","url":"https://www.kaggle.com/tanuprabhu","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3200273-kg.jpg"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/tanuprabhu/linear-regression-dataset/download","contentSize":"1425 bytes"}],"commentCount":0,"dateModified":"2019-06-21T05:57:12.357Z","discussionUrl":"https://www.kaggle.com/tanuprabhu/linear-regression-dataset/discussion","alternateName":"Data-set for practicing Linear Regression","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/239789/508365/92496b1d3793e85e562d4ad5928e31ab/dataset-card.png?t=2019-06-21-06-06-24","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":0},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":3008},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":31767},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":42}]}</script>
+    
+
+  
+    
+        <link rel="alternate" type="application/json+oembed"
+            href="https://www.kaggle.com/oembed/dataset?url=https%3A%2F%2Fwww.kaggle.com%2Ftanuprabhu%2Flinear-regression-dataset"
+            title="Linear Regression Data-set" />
+    
+
+  
+    
+    
+<script nonce="4xrs6QGVNns41p0HngFuSQ==" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+
+    Kaggle.Current = {
+        antiForgeryToken: 'CfDJ8LdUzqlsSWBPr4Ce3rb9VL_doerhJKkRYuCVvzG3SlkWmDrbkGZqbZKx4GIB90P0AA1cXBsqYWTmzD6kw4HCagj8HuegVwDGG6DcYKjhwPi_fBVX2E3lKICKpJPcv9PLYSwuo2GIVkKc_cJXjrkSMh0',
+        isAnonymous: true,
+        analyticsToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Mzg0OTAyNTUsIlVzZXJJZCI6MH0.9qLldbx7PfRXVfg1nYfp_6HyChknDJpR8TnFQmqcopA',
+        analyticsTokenExpiry: 15,
+        
+        
+        
+        
+        
+        
+        
+        enableRapidash: true, 
+    }
+        Kaggle.Current.log = function(){};
+        Kaggle.Current.warn = function(){};
+
+    var decodeUserDisplayName = function () {
+        var escapedUserDisplayName = Kaggle.Current.userDisplayNameEscaped || "";
+        try {
+            var textVersion = new DOMParser().parseFromString(escapedUserDisplayName, "text/html").documentElement.textContent;
+            if (textVersion) {
+                return textVersion;
+            }
+        } catch(ex) {}
+        return escapedUserDisplayName;
+    }
+    Kaggle.Current.userDisplayName = decodeUserDisplayName();
+</script>
+
+    
+
+<script nonce="4xrs6QGVNns41p0HngFuSQ==" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+    Kaggle.PageMessages = [];
+</script>
+
+
+
+    <script nonce="4xrs6QGVNns41p0HngFuSQ==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="4xrs6QGVNns41p0HngFuSQ==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="4xrs6QGVNns41p0HngFuSQ==" src="/static/assets/runtime.js?v=7d8cac5d397fe45a9d2e" data-turbolinks-track="reload"></script>
+  <script nonce="4xrs6QGVNns41p0HngFuSQ==" src="/static/assets/vendor.js?v=26a3487f6f4d622267d2" data-turbolinks-track="reload"></script>
+  <script nonce="4xrs6QGVNns41p0HngFuSQ==" src="/static/assets/app.js?v=7f074fa0f284842ddee4" data-turbolinks-track="reload"></script>
+    <script nonce="4xrs6QGVNns41p0HngFuSQ==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+
+<body data-turbolinks="false">
+  <main>
+    
+
+
+
+
+
+
+<div id="site-container"></div>
+<div data-component-name="NavigationContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="4xrs6QGVNns41p0HngFuSQ==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"navigationType":"BOTH_NAV"});performance && performance.mark && performance.mark("NavigationContainer.componentCouldBootstrap");</script>
+<div id="site-body" class="hide">
+    
+
+
+<div data-component-name="DatasetContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="4xrs6QGVNns41p0HngFuSQ==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"title":"Linear Regression Data-set","slug":"linear-regression-dataset","licenseId":11,"data":{"firestorePath":"R1lJfJBiGZa4zMrSLxio/versions/0MZQhf5q8BTSzFxLn5A4","databundleVersionId":524531,"databundle":{"type":"databundle","databundleInfo":{"currentDatabundleVersionId":524531,"databundleType":"dataset","diffType":"versioned","creationDate":"2019-06-21T05:57:11.1631795Z","creatorUserId":3200273,"removalDate":null,"currentGoodVersionKey":"0MZQhf5q8BTSzFxLn5A4","lastestVersionKey":"0MZQhf5q8BTSzFxLn5A4","versions":{"totalChildren":1,"count":0,"children":[]}},"datasetInfo":{"datasetId":239789,"datasetSlug":"/tanuprabhu/linear-regression-dataset","isPrivate":false},"competitionInfo":null,"remoteDatasourceInfo":null,"bigqueryInfo":null,"githubInfo":null,"key":"R1lJfJBiGZa4zMrSLxio","path":"R1lJfJBiGZa4zMrSLxio","legacyEntityId":252069,"relativeUrl":"","name":"Linear Regression Data-set","description":null},"databundleVersion":{"type":"databundleVersion","databundleVersionInfo":{"versionNumber":1,"versionNotes":"Initial release","creatorUserId":3200273,"creationDate":"2019-06-21T05:57:11.1631813Z","removalDate":null,"databundleVersionType":"fileset","objectTypeCount":{}},"datasetVersionInfo":{"datasetVersionId":508365},"statusInfo":{"status":"ready","statusMessage":"Ready","percentageCompleted":1.0},"exceptionInfo":{"criticalException":null,"warningExceptions":[]},"filesetInfo":{"totalSize":4995,"downloadUrl":null,"directories":{"totalChildren":0,"count":0,"children":[]},"files":{"totalChildren":1,"count":0,"children":[]}},"originalCompressionInfo":null,"bundleCompressionInfo":{"filename":"archive.zip","fileExtension":".zip","fileSize":1425,"contentEncoding":"application/zip","contentMd5":"50iYHaCVNJF6yLCzel8xTg==","archiveGcsUrl":"gs://kaggle-data-sets/239789/508365/bundle/archive.zip","creationLastUpdate":"2019-10-26T06:53:39.6316604Z","creationPercentComplete":1.0},"bigquerySnapshotInfo":null,"storageInfo":{"uploadDataLocation":{"bucket":"kaggle-data-sets","path":"239789/508365/upload"},"rawDataLocation":{"bucket":"kagglesdsdata","path":"datasets/239789/508365"},"individualCompressedLocation":{"bucket":"kaggle-data-sets","path":"239789/508365/compressed"},"bundleArchiveLocation":{"bucket":"kaggle-data-sets","path":"239789/508365/bundle/archive.zip"},"fileSystemLocation":{"bucket":"kaggle-data-sources","path":"datasets/239789/508365/fs/embedded_fs"}},"fileSummaryInfo":{"totalFileCount":1,"fileTypes":[{"extension":".csv","fileCount":1,"totalSize":4995}],"sampleFileNames":["Linear Regression - Sheet1.csv"]},"columnSummaryInfo":{"totalColumnCount":2,"columnTypes":[{"columnType":"Decimal","columnCount":1,"rowCount":300},{"columnType":"Integer","columnCount":1,"rowCount":300}],"sampleColumnNames":["Y","X"]},"externalCopyInfo":null,"originalRemoteUrlInfo":null,"key":"0MZQhf5q8BTSzFxLn5A4","path":"R1lJfJBiGZa4zMrSLxio/versions/0MZQhf5q8BTSzFxLn5A4","legacyEntityId":524531,"relativeUrl":"","name":"Version 1","description":"Initial release"}},"isPrivate":false,"owner":{"id":3200273,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3200273-kg.jpg","isOrganization":false,"name":"Tanu N Prabhu","profileUrl":"/tanuprabhu","slug":"tanuprabhu","maxFileSizeBytes":null,"userTier":"novice","organizationMemberCount":null},"licenseGroups":[{"id":1,"name":"Creative Commons","licenses":[{"id":1,"name":"CC0: Public Domain","description":"CC0: Public Domain \u003ca href=\u0022https://creativecommons.org/publicdomain/zero/1.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/publicdomain/zero/1.0/","displaySequence":1},{"id":3,"name":"CC BY-NC-SA 4.0","description":"CC BY-NC-SA 4.0 \u003ca href=\u0022https://creativecommons.org/licenses/by-nc-sa/4.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by-nc-sa/4.0/","displaySequence":2},{"id":8,"name":"CC BY-SA 4.0","description":"CC BY-SA 4.0 \u003ca href=\u0022https://creativecommons.org/licenses/by-sa/4.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by-sa/4.0/","displaySequence":3},{"id":10,"name":"CC BY-SA 3.0","description":"CC BY-SA 3.0 \u003ca href=\u0022https://creativecommons.org/licenses/by-sa/3.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by-sa/3.0/","displaySequence":4},{"id":13,"name":"Attribution 4.0 International (CC BY 4.0)","description":"CC-BY 4.0 \u003ca href=\u0022https://creativecommons.org/licenses/by/4.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by/4.0/","displaySequence":5},{"id":14,"name":"Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)","description":"CC-BY-NC 4.0 \u003ca href=\u0022https://creativecommons.org/licenses/by-nc/4.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by-nc/4.0/","displaySequence":6},{"id":16,"name":"Attribution 3.0 Unported (CC BY 3.0)","description":"CC BY 3.0 \u003ca href=\u0022https://creativecommons.org/licenses/by/3.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by/3.0/","displaySequence":7},{"id":17,"name":"Attribution 3.0 IGO (CC BY 3.0 IGO)","description":"CC BY 3.0 IGO \u003ca href=\u0022https://creativecommons.org/licenses/by/3.0/igo/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by/3.0/igo/","displaySequence":8},{"id":19,"name":"Attribution-NonCommercial-ShareAlike 3.0 IGO (CC BY-NC-SA 3.0 IGO)","description":"CC BY-NC-SA 3.0 IGO \u003ca href=\u0022https://creativecommons.org/licenses/by-nc-sa/3.0/igo/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by-nc-sa/3.0/igo/","displaySequence":9},{"id":22,"name":"Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)","description":"CC BY-ND 4.0 \u003ca href=\u0022https://creativecommons.org/licenses/by-nd/4.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by-nd/4.0/","displaySequence":10},{"id":23,"name":"Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)","description":"CC BY-NC-ND 4.0 \u003ca href=\u0022https://creativecommons.org/licenses/by-nc-nd/4.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://creativecommons.org/licenses/by-nc-nd/4.0/","displaySequence":11}],"displaySequence":1},{"id":2,"name":"GPL","licenses":[{"id":9,"name":"GPL 2","description":"GPL 2 \u003ca href=\u0022http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html","displaySequence":1},{"id":25,"name":"GNU Lesser General Public License 3.0","description":"LGPL 3.0 \u003ca href=\u0022http://www.gnu.org/licenses/lgpl-3.0.html\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"http://www.gnu.org/licenses/lgpl-3.0.html","displaySequence":2},{"id":26,"name":"GNU Affero General Public License 3.0","description":"AGPL 3.0 \u003ca href=\u0022http://www.gnu.org/licenses/agpl-3.0.html\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"http://www.gnu.org/licenses/agpl-3.0.html","displaySequence":3},{"id":27,"name":"GNU Free Documentation License 1.3","description":"FDL 1.3 \u003ca href=\u0022http://www.gnu.org/licenses/fdl-1.3.html\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"http://www.gnu.org/licenses/fdl-1.3.html","displaySequence":4}],"displaySequence":2},{"id":3,"name":"Open Data Commons","licenses":[{"id":5,"name":"Database: Open Database, Contents: Database Contents","description":"Database: Open Database \u003ca href=\u0022http://opendatacommons.org/licenses/odbl/1.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e, Contents: Database Contents \u003ca href=\u0022http://opendatacommons.org/licenses/dbcl/1.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"http://opendatacommons.org/licenses/dbcl/1.0/","displaySequence":1},{"id":6,"name":"Database: Open Database, Contents: © Original Authors","description":"Database: Open Database \u003ca href=\u0022http://opendatacommons.org/licenses/odbl/1.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e, Contents: © Original Authors","url":"http://opendatacommons.org/licenses/odbl/1.0/","displaySequence":2},{"id":15,"name":"ODC Public Domain Dedication and Licence (PDDL)","description":"PDDL  \u003ca href=\u0022https://opendatacommons.org/licenses/pddl/1.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://opendatacommons.org/licenses/pddl/1.0/","displaySequence":3},{"id":24,"name":"ODC Attribution License (ODC-By)","description":"ODC-BY 1.0 \u003ca href=\u0022https://opendatacommons.org/licenses/by/1-0/index.html\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://opendatacommons.org/licenses/by/1-0/index.html","displaySequence":4}],"displaySequence":3},{"id":6,"name":"Community Data License","licenses":[{"id":20,"name":"Community Data License Agreement - Permissive - Version 1.0","description":"CDLA Permissive 1.0 \u003ca href=\u0022https://cdla.io/permissive-1-0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://cdla.io/permissive-1-0/","displaySequence":1},{"id":21,"name":"Community Data License Agreement - Sharing - Version 1.0","description":"CDLA Sharing 1.0 \u003ca href=\u0022https://cdla.io/sharing-1-0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://cdla.io/sharing-1-0/","displaySequence":2}],"displaySequence":4},{"id":4,"name":"Special","licenses":[{"id":7,"name":"World Bank Dataset Terms of Use","description":"World Bank Dataset Terms of Use \u003ca href=\u0022https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets","displaySequence":1},{"id":2,"name":"Reddit API Terms","description":"Reddit API Terms \u003ca href=\u0022https://www.reddit.com/wiki/api\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://www.reddit.com/wiki/api","displaySequence":2},{"id":18,"name":"U.S. Government Works","description":"U.S. Government Works \u003ca href=\u0022https://www.usa.gov/government-works/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://www.usa.gov/government-works/","displaySequence":3},{"id":28,"name":"EU ODP Legal Notice","description":"EU ODP Legal Notice \u003ca href=\u0022https://ec.europa.eu/info/legal-notice_en\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","url":"https://ec.europa.eu/info/legal-notice_en","displaySequence":4}],"displaySequence":5},{"id":5,"name":"Other","licenses":[{"id":11,"name":"Data files © Original Authors","description":"Data files © Original Authors","url":null,"displaySequence":1},{"id":12,"name":"Other (specified in description)","description":"Other (specified in description)","url":null,"displaySequence":2},{"id":4,"name":"Unknown","description":"Unknown","url":null,"displaySequence":3}],"displaySequence":6}],"owners":[{"id":0,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/","isOrganization":false,"name":"","profileUrl":"/","slug":"","maxFileSizeBytes":null,"userTier":"novice","organizationMemberCount":null},{"id":3200273,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3200273-kg.jpg","isOrganization":false,"name":"Tanu N Prabhu","profileUrl":"/tanuprabhu","slug":"tanuprabhu","maxFileSizeBytes":null,"userTier":"novice","organizationMemberCount":null}],"overview":"Data-set for practicing Linear Regression","description":"### Context\n\nThe reason behind providing the data-set is that currently I\u0027m doing my Master\u0027s in Computer Science, in my second semester I have chosen Data Science class, so in this class they are teaching me Linear Regression, so I decided to provide a set of x and y values, which not only helps me and also helps others.\n\n### Content\n\nThe dataset contains x and y values: \nx values are just iterating values.\ny values depend on the equation y = mx+c.\n\n\n\n\n### Inspiration\n\nEveryone on this planet should be familiar (at least Computer Science students, etc.) about Linear Regression, so calculate the trend line, R^2, coefficient and intercept values.","datasetId":239789,"isRemoved":false,"isVersionRemoved":false,"isFeatured":false,"isSuperFeatured":false,"scheduledToBeFeatured":null,"scheduledToBeUnFeatured":null,"scheduledToBeSuperFeatured":null,"scheduledToBeUnSuperFeatured":null,"datasetVersionId":508365,"datasetVersionNumber":1,"lastVersionNumber":1,"datasetUrl":"/tanuprabhu/linear-regression-dataset","datasetExternalUrl":"https://kaggle.com/tanuprabhu/linear-regression-dataset","originalImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/239789/508365/92496b1d3793e85e562d4ad5928e31ab/data-original.png?t=2019-06-21-06-06-24","coverImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/239789/508365/92496b1d3793e85e562d4ad5928e31ab/dataset-cover.png?t=2019-06-21-06-06-24","cardImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/239789/508365/92496b1d3793e85e562d4ad5928e31ab/dataset-card.png?t=2019-06-21-06-06-24","thumbnailImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/239789/508365/92496b1d3793e85e562d4ad5928e31ab/dataset-thumbnail.png?t=2019-06-21-06-06-24","license":{"id":11,"name":"Data files © Original Authors","description":"Data files © Original Authors","url":null,"displaySequence":null},"voteCount":42,"creatorUserId":3200273,"creatorDisplayName":"Tanu N Prabhu","ownerTwitter":null,"lastUpdated":"2019-06-21T05:57:12.357Z","downloadUrl":"/tanuprabhu/linear-regression-dataset/download","newNotebookUrl":"code/scripts/new?datasetVersionId=508365","newScriptUrl":"code/scripts/new?datasetVersionId=508365","hasAlreadyVotedUp":false,"isOldDatasetVersion":false,"numberOfViews":31767,"numberOfDownloads":3008,"numberOfScripts":19,"numberOfTopics":0,"numberOfTasks":1,"canEdit":false,"canPerformOwnerTasks":false,"canEditSlug":false,"canEditPublishStatus":false,"canEditFeatureStatus":false,"canEditDescription":false,"hideVersionStatuses":true,"cardImageLeft":472,"cardImageTop":0,"cardImageWidth":1326,"cardImageHeight":1326,"coverImageLeft":0,"coverImageTop":693,"coverImageWidth":1993,"coverImageHeight":419,"datasetVersions":[{"id":508365,"slug":"linear-regression-dataset","name":"Linear Regression Data-set","creationDate":"2019-06-21T05:57:12.357Z","versionNumber":1,"versionNotes":"Initial release","thumbnailImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/239789/508365/92496b1d3793e85e562d4ad5928e31ab/dataset-thumbnail.png?t=2019-06-21-06-06-24","datasetVersionUrl":"/tanuprabhu/linear-regression-dataset/version/1","status":"ready","userMessage":null,"isRemoved":false,"creator":{"id":3200273,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3200273-kg.jpg","isOrganization":false,"name":"Tanu N Prabhu","profileUrl":"/tanuprabhu","slug":"tanuprabhu","maxFileSizeBytes":null,"userTier":"novice","organizationMemberCount":null},"userSpecifiedSources":"Google Sheets","doi":null,"databundleVersionId":524531}],"datasetVersionTotalCount":1,"feed":[],"topicId":null,"isNewTopic":false,"canSeeDeletionButton":false,"checklistDismissed":false,"type":"fileset","diffType":"versioned","checklistCollapsed":false,"isInFlight":false,"maintainerOrganization":null,"createdByKernel":null,"usabilityRating":{"score":1.0,"columnDescriptionScore":1.0,"coverImageScore":1.0,"fileDescriptionScore":1.0,"fileFormatScore":1.0,"licenseScore":1.0,"overviewScore":1.0,"provenanceScore":1.0,"publicKernelScore":1.0,"subtitleScore":1.0,"tagScore":1.0,"updateFrequencyScore":1.0},"bookmarked":false,"discussion":{"canDownvote":false,"dataUrl":"/forums/250964/topics.json","id":250964,"showSubscribeButton":false,"isSubscribed":false,"subscription":"unsubscribe","paramValues":{"page":1,"search":null,"group":"all","sortBy":"hot","category":"all"}},"currentTab":"data","newTopic":{"allowAttachments":false,"authorTier":"novice","authorType":"topic","forumId":250964,"parentName":"Linear Regression Data-set","parentUrl":"/tanuprabhu/linear-regression-dataset/discussion","isPrivate":false},"categories":{"tags":[{"id":7000,"name":"earth and nature","fullPath":"subject \u003e earth and nature","listingUrl":"/datasets?group=public\u0026tagids=7000","description":null,"datasetCount":14979,"competitionCount":2,"notebookCount":156,"tagUrl":"/tags/natural-and-physical-sciences","displayName":"Earth and Nature","fontAwesomeIcon":""},{"id":13405,"name":"linear regression","fullPath":"technique \u003e regression \u003e linear regression","listingUrl":"/datasets?group=public\u0026tagids=13405","description":null,"datasetCount":268,"competitionCount":0,"notebookCount":3388,"tagUrl":"/tags/linear-regression","displayName":"Linear Regression","fontAwesomeIcon":""}],"type":"dataset"},"upvoteSuggestion":{"voteCount":42,"medalVoteCount":5,"upVoters":[{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Felipe V S Rodrigues","profileUrl":"/felipevsrodrigues","tier":"contributor","tierInt":1,"userId":6267256,"userName":"felipevsrodrigues"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Feranmi Dere","profileUrl":"/feranmidere","tier":"contributor","tierInt":1,"userId":6093174,"userName":"feranmidere"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/5619422-kg.png","displayName":"Jonatha Silva","profileUrl":"/jonathamateusdasilva","tier":"contributor","tierInt":1,"userId":5619422,"userName":"jonathamateusdasilva"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"san__bt","profileUrl":"/sandeshbhat","tier":"contributor","tierInt":1,"userId":5563010,"userName":"sandeshbhat"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"basilevs27","profileUrl":"/basilevs27","tier":"contributor","tierInt":1,"userId":5223557,"userName":"basilevs27"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"YemiOla","profileUrl":"/yemiola","tier":"novice","tierInt":0,"userId":5196305,"userName":"yemiola"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/5107334-gr.jpg","displayName":"Srun Keavatey","profileUrl":"/srunkeavatey","tier":"novice","tierInt":0,"userId":5107334,"userName":"srunkeavatey"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Nadine Mukondiwa","profileUrl":"/nadinemukondiwa","tier":"novice","tierInt":0,"userId":4998065,"userName":"nadinemukondiwa"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"cygnusx1","profileUrl":"/emmettbishop","tier":"novice","tierInt":0,"userId":4812911,"userName":"emmettbishop"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Lucky Chav","profileUrl":"/luckychav","tier":"novice","tierInt":0,"userId":4410012,"userName":"luckychav"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Bharath Menon","profileUrl":"/bharathmenon","tier":"novice","tierInt":0,"userId":4375657,"userName":"bharathmenon"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"jadechen","profileUrl":"/jadechen","tier":"novice","tierInt":0,"userId":4260284,"userName":"jadechen"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Connie Chao","profileUrl":"/conniechao","tier":"novice","tierInt":0,"userId":4230206,"userName":"conniechao"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Kyle Olsen","profileUrl":"/kyleolsen","tier":"novice","tierInt":0,"userId":4067300,"userName":"kyleolsen"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"bhargavi sandur","profileUrl":"/bhargavisandur","tier":"novice","tierInt":0,"userId":3973801,"userName":"bhargavisandur"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3864519-gr.jpg","displayName":"Mark S","profileUrl":"/mrkstapleton","tier":"novice","tierInt":0,"userId":3864519,"userName":"mrkstapleton"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Carlos Hernani Morales","profileUrl":"/carhermo","tier":"novice","tierInt":0,"userId":3413962,"userName":"carhermo"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3200273-kg.jpg","displayName":"Tanu N Prabhu","profileUrl":"/tanuprabhu","tier":"novice","tierInt":0,"userId":3200273,"userName":"tanuprabhu"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Miki","profileUrl":"/zyling","tier":"novice","tierInt":0,"userId":3091857,"userName":"zyling"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Debora","profileUrl":"/desla77","tier":"novice","tierInt":0,"userId":2850903,"userName":"desla77"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"M. Cooper","profileUrl":"/mscencapsulated","tier":"novice","tierInt":0,"userId":595338,"userName":"mscencapsulated"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Mariano Bonoli","profileUrl":"/marianobonoli","tier":"novice","tierInt":0,"userId":5443310,"userName":"marianobonoli"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Dennis Papenfuss","profileUrl":"/dennispapenfuss","tier":"novice","tierInt":0,"userId":5776993,"userName":"dennispapenfuss"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"andreandre2245","profileUrl":"/andreandre2245","tier":"novice","tierInt":0,"userId":5624119,"userName":"andreandre2245"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Wen Liu 2020","profileUrl":"/wenliu2020","tier":"novice","tierInt":0,"userId":6234633,"userName":"wenliu2020"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Suhail Ahmed","profileUrl":"/suhailahmedvelorum","tier":"novice","tierInt":0,"userId":6187056,"userName":"suhailahmedvelorum"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"bela sapira","profileUrl":"/belasapira","tier":"novice","tierInt":0,"userId":6126770,"userName":"belasapira"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Vibhusha","profileUrl":"/vibhusha","tier":"novice","tierInt":0,"userId":8901235,"userName":"vibhusha"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Marwan Medhat Abdallah","profileUrl":"/marwanmedhatabdallah","tier":"novice","tierInt":0,"userId":8746875,"userName":"marwanmedhatabdallah"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Subrat Saxena","profileUrl":"/subratsaxena","tier":"novice","tierInt":0,"userId":8613287,"userName":"subratsaxena"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/8451277-gr.jpg","displayName":"Vladimir Bartovic","profileUrl":"/vladimirbartovic","tier":"novice","tierInt":0,"userId":8451277,"userName":"vladimirbartovic"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Sangavai Pillai","profileUrl":"/sang1256","tier":"novice","tierInt":0,"userId":8258382,"userName":"sang1256"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/8101272-gr.jpg","displayName":"yehtetlin667","profileUrl":"/yehtetlin667","tier":"novice","tierInt":0,"userId":8101272,"userName":"yehtetlin667"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Parthajit Das","profileUrl":"/parthajitdas","tier":"novice","tierInt":0,"userId":7649723,"userName":"parthajitdas"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Arihant Sheth","profileUrl":"/arihantsheth","tier":"novice","tierInt":0,"userId":7553162,"userName":"arihantsheth"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Nur Jahan01","profileUrl":"/nurjahan01","tier":"novice","tierInt":0,"userId":7396523,"userName":"nurjahan01"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Anurag","profileUrl":"/anuragavula","tier":"novice","tierInt":0,"userId":6743049,"userName":"anuragavula"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Supreeth V","profileUrl":"/supreethv","tier":"novice","tierInt":0,"userId":6711318,"userName":"supreethv"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/6589077-kg.PNG","displayName":"Abdul Wali ","profileUrl":"/abdulwaliarain","tier":"novice","tierInt":0,"userId":6589077,"userName":"abdulwaliarain"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"PHDMGT2004 Raman","profileUrl":"/phdmgt2004raman","tier":"novice","tierInt":0,"userId":6589012,"userName":"phdmgt2004raman"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"PatoYF98","profileUrl":"/patoyf98","tier":"novice","tierInt":0,"userId":6387405,"userName":"patoyf98"},{"avatarThumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","displayName":"Alex Benton","profileUrl":"/alexbenton","tier":"novice","tierInt":0,"userId":6373131,"userName":"alexbenton"}]},"readerGroupId":null,"writerGroupId":null,"collaborators":{"owner":{"isUser":true,"isGroup":false,"userId":3200273,"groupId":null,"groupMemberCount":null,"profileUrl":"/tanuprabhu","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3200273-kg.jpg","name":"Tanu N Prabhu","slug":"tanuprabhu","userTier":"novice","joinDate":null,"type":"owner"},"collaborators":[]},"isCollaborator":false,"deletionNeedsReview":false,"hasDatasetDoiApproved":false,"canSeeConfigAsCode":true,"canCreateDatasetTasks":true,"blockTaskCreation":false,"canSeeDatasetHashLink":true,"medalUrl":"/static/images/medals/datasets/bronzel@2x.png","datasetHashLink":null});performance && performance.mark && performance.mark("DatasetContainer.componentCouldBootstrap");</script><script nonce="4xrs6QGVNns41p0HngFuSQ==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: [],
+    });
+</script>
+<script type="text/javascript" nonce="4xrs6QGVNns41p0HngFuSQ==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const useProdHosts = ["www.kaggle.com", "admin.kaggle.com"];
+    const subdomain = useProdHosts.includes(window.location.hostname) ? "www" : "staging";
+
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    lib.src = `https://${subdomain}.kaggleusercontent.com/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+</div>
+
+
+
+
+  </main>
+</body>
+
+</html>
